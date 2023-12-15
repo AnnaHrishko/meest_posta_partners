@@ -70,7 +70,10 @@ body{
         background-size: 100% 60%;
     }
     @include maxWidth500(){
-        background-size: contain;
+        background-size: 100% 55%;
+    }
+    @include maxWidth425(){
+        background-size: 100% 50%;
     }
     &__text{
         width: 40%;
@@ -84,6 +87,12 @@ body{
         @include maxWidth991(){
             width: 100%;
             padding: 50px 0 300px;
+        }
+        @include maxWidth500(){
+            padding: 50px 0 250px;
+        }
+        @include maxWidth425(){
+            padding: 50px 0 200px;
         }
         .main-heading{
             margin-bottom: 20px;
@@ -114,7 +123,7 @@ body{
         }
     }
 }
-.main-partners-wrapper{
+.main-partners{
     display: flex;
     flex-wrap: wrap;
     @include maxWidth768(){
@@ -215,7 +224,7 @@ body{
         }
     }
 }
-.general-partners-wrapper{
+.general-partners{
     display: flex;
     flex-wrap: wrap;
     @include maxWidth768(){
@@ -272,7 +281,7 @@ body{
         }
     }
 }
-.all-partners-wrapper{
+.all-partners{
     display: flex;
     flex-wrap: wrap;
     &__row{
